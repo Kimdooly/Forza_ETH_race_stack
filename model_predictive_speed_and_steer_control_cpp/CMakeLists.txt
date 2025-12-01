@@ -12,7 +12,6 @@ find_package(geometry_msgs REQUIRED)
 find_package(visualization_msgs REQUIRED)
 find_package(ackermann_msgs REQUIRED)
 find_package(Eigen3 REQUIRED)
-find_package(ament_index_python REQUIRED)
 
 add_executable(model_predictive_speed_and_steer_control src/model_predictive_speed_and_steer_control.cpp)
 ament_target_dependencies(model_predictive_speed_and_steer_control
@@ -33,8 +32,5 @@ target_link_libraries(model_predictive_speed_and_steer_control Eigen3::Eigen)
 
 install(TARGETS model_predictive_speed_and_steer_control
   DESTINATION lib/${PROJECT_NAME})
-
-install(DIRECTORY launch config
-  DESTINATION share/${PROJECT_NAME})
 
 ament_package()
