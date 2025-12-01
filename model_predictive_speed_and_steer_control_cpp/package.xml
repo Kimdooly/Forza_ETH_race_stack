@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>model_predictive_speed_and_steer_control_cpp</name>
+  <version>0.0.1</version>
+  <description>RCLCPP port of the model_predictive_speed_and_steer_control example with race stack MPC topics.</description>
+  <maintainer email="maintainer@example.com">Race Stack Maintainer</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>eigen3_cmake_module</build_depend>
+  <build_export_depend>eigen3_cmake_module</build_export_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <depend>visualization_msgs</depend>
+  <depend>ackermann_msgs</depend>
+  <depend>ament_index_python</depend>
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

@@ -1,0 +1,11 @@
+model_predictive_speed_and_steer_control:
+  ros__parameters:
+    loop_dt: 0.05
+    horizon_length: 10
+    target_speed: 2.5
+    path_radius: 12.0
+    path_points: 800
+    initial_x: 0.0
+    initial_y: 0.0
+    initial_yaw: 0.0
+    initial_speed: 0.0
